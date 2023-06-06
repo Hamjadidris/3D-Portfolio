@@ -3,6 +3,8 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 
+import emailjs from "@emailjs/browser";
+
 import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
@@ -16,15 +18,54 @@ const Contact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setform({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_plo8rit",
+        "template_3uzfirj",
+        {
+          from_name: form.name,
+          to_name: "Hamjad",
+          from_email: form.email,
+          to_email: "dajmahsirdi@gmail.com",
+          message: form.message,
+        },
+        "izzTf75-oiql9GDXR"
+      )
+      .then(
+        () => {
+          console.log(form);
+          
+          setLoading(false);
+          alert("Thank you for reaching out. I will surely get back to you!");
+          setform({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Something Went Wrong 😕");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-black-100 bg-opacity-50 p-8 rounded-2xl"
       >
         <p className={`${styles.sectionSubText}`}>Get In Touch</p>
         <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
