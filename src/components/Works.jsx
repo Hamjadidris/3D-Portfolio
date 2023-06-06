@@ -3,6 +3,7 @@ import Tilt from "react-parallax-tilt";
 
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import show from '../assets/show.svg'
 import { github } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -24,7 +25,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl w-full sm:w-[22.5rem]"
+        className="bg-tertiary p-5 rounded-2xl w-full sm:w-[22.5rem] min-h-full"
       >
         <div className="relative w-full h-[14.4rem]">
           <img
@@ -34,13 +35,13 @@ const ProjectCard = ({
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="bg-gray-200 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               onClick={() => {
                 window.open(source_code_link, "_blank");
               }}
             >
               <img
-                src={github}
+                src={show}
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
