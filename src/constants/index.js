@@ -14,21 +14,18 @@ import {
   nuxt,
   vue,
   graphql,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   Logo,
   hng,
   edu,
   centenumLogo,
+  hairluxe,
   cbcLogo,
-  manage,
-  lulu,
-  foodliky,
-  rps,
-  homeview,
-  prop,
+  proceduralyGeneratedAnimation,
+  frequencyScreenshot,
+  // foodliky,
+  plateauIcon,
+  flappyScreenshot,
 } from "../assets";
 
 export const navLinks = [
@@ -48,11 +45,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "App Developer (Ionic)",
+    title: "Mobile Developer (Ionic)",
     icon: mobile,
   },
   {
@@ -174,132 +171,115 @@ const experiences = [
     company_name: "Centenum",
     icon: centenumLogo,
     iconBg: "#000",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - Nov 2023",
     points: [
-      "Developing and maintaining web applications using Nuxt.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborated with a team of developers and designers to deploy rapid development and deployment processes using Git version control",
+      "Granted additional code review permissions after demonstrating strong attention to detail that led to a 25% decrease in code errors",
+      "Provided support to senior front-end developers after becoming proficient in NUXT JS, resulting a in stronger, more efficient tech team",
+      "Stayed up-to-date with emerging technologies and frameworks, resulting in a 20% increase in team efficiency and project success rate.",
+    ],
+  },
+  {
+    title: "Fullstack Developer",
+    company_name: "Hairluxe",
+    icon: hairluxe,
+    iconBg: "#fff",
+    date: "March 2023 - Oct 2023",
+    points: [
+      "Led full stack development for an E-commerce website, resulting in 25% faster loading times and an improved user experience",
+      "Integrated a wide range of third-party services and components like payment gateways, emailing services and geo-location services.",
+      "Developed and maintained back-end services and APIs using Prisma and PostgreSQL, resulting in a 30% increase in system performance and a 25% reduction in operational costs.",
+      "Developed databases and data storage solutions, improving data retrieval times and reducing data loss by 30%.",
+      "Built a fully custom administration web app for editing, managing and analyzing, which increased the customer service by 90% and improved the efficiency of operating by over 25%.",
+    ],
+  },
+  {
+    title: "Front end Developer",
+    company_name: "PLASIEC",
+    icon: plateauIcon,
+    iconBg: "#fff",
+    date: "July 2023 - Sept 2023",
+    points: [
+      "Built a voters verification system app for the electoral body of the Plateau state government of Nigeria.",
+      "Due to the data sensitive nature of a voters verification system, security was paramount during development earning the app a 100% penetration test score.",
+      "Increased vote security and reduced the voting process for each voter by over 45%.",
+      "Developed insightful realtime dashboards to visualise and monitor all voting activities from not only the voters but also the assigned government agents.",
+    ],
+  },
+  {
+    title: "Lead Front end Developer",
+    company_name: "Centenum",
+    icon: centenumLogo,
+    iconBg: "#000",
+    date: "Nov 2023 - Present",
+    points: [
+      "Consolidated and implemented the necessary coding processes and collaboration efforts to integrate back-end APIs and services within the existing web application",
+      "Worked closely with other developers and product team to ensures smooth developer experience and scope of future projects and innovations",
+      "Conducted regular code reviews and mentored junior developers, resulting in a 30% improvement in code quality and adherence to coding standards",
+      "Actively participated in the evaluation and selection of new technologies and tools to improve development processes.",
+      "Developed and maintained technical documentation for the front-end codebase, resulting in a 20% reduction in onboarding times for new developers.",
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Manage",
-    description:
-      "Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.",
+    name: "Procedurally Generated Animation",
+    description: "Simulating animal movement with javascript",
     tags: [
       {
-        name: "html",
+        name: "Vanilla Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "matter.js",
         color: "pink-text-gradient",
       },
     ],
-    image: manage,
-    source_code_link: "https://hamjadidris.github.io/manage/",
+    image: proceduralyGeneratedAnimation,
+    source_code_link:
+      "https://hamjadidris.github.io/procedurally-generated-animation/",
   },
   {
-    name: "Foodlikly",
-    description:
-      "A basic website for a an imagninary restaurant called Foodlikly.",
+    name: "Flappy cars",
+    description: "Flappy bird but silly cats 😂",
     tags: [
       {
-        name: "hmtl",
+        name: "Vanilla Javascript",
         color: "blue-text-gradient",
       },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
     ],
-    image: foodliky,
-    source_code_link: "https://hamjadidris.github.io/FoodLikly/",
+    image: flappyScreenshot,
+    source_code_link: "https://hamjadidris.github.io/flappy-cars/",
   },
+  // {
+  //   name: "Foodlikly",
+  //   description:
+  //     "A basic website for a an imagninary restaurant called Foodlikly.",
+  //   tags: [
+  //     {
+  //       name: "hmtl",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: foodliky,
+  //   source_code_link: "https://hamjadidris.github.io/FoodLikly/",
+  // },
   {
-    name: "Homesphere",
-    description:
-      "Its just a good looking house.",
+    name: "Frequency Noise",
+    description: "Audio frequency with SVGs",
     tags: [
       {
-        name: "vue",
+        name: "Vanilla Javascript",
         color: "blue-text-gradient",
       },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: homeview,
-    source_code_link: "homesphere-kohl.vercel.app",
-  },
-  {
-    name: "LULU",
-    description: "A language based game to help preserve languages in Africa.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "axios",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: lulu,
-    source_code_link: "lulu-game.vercel.app",
-  },
-  {
-    name: "Janken Pon",
-    description: "A rock, paper, scissors game.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: rps,
-    source_code_link: "https://hamjadidris.github.io/RockPaperScissorsJS/",
-  },
-  {
-    name: "Centenum Prop",
-    description:
-      "Web-based platform used to take a view of IRE, a buzzing real estate powered by nature and technology, but created with you in mind.",
-    tags: [
-      {
-        name: "nuxt",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "apollo",
-        color: "green-text-gradient",
-      },
-      {
-        name: "graphql",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: prop,
-    source_code_link: "https://ire.centenum.com/",
+    image: frequencyScreenshot,
+    source_code_link: "https://hamjadidris.github.io/Frequency-Noise/",
   },
 ];
 

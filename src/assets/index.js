@@ -25,6 +25,8 @@ import Logo from "./company/Logo.png";
 import hng from "./company/hng.jpeg";
 import edu from "./company/edu.png";
 import centenumLogo from "./company/centenumLogo.svg";
+import plateauIcon from "./company/plateauIcon.png";
+import hairluxe from "./company/hairluxe.png";
 import cbcLogo from "./company/cbc_logo.svg";
 
 import carrent from "./carrent.png";
@@ -35,6 +37,9 @@ import lulu from "./lulu.png";
 import foodliky from "./foodliky.png";
 import rps from "./rps.png";
 import homeview from "./homeview.png";
+import proceduralyGeneratedAnimation from "./proceduralyGeneratedAnimation.png";
+import frequencyScreenshot from "./frequencyScreenshot.png";
+import flappyScreenshot from "./flappyScreenshot.png";
 import prop from "./prop.png";
 
 export {
@@ -62,14 +67,19 @@ export {
   hng,
   edu,
   centenumLogo,
+  plateauIcon,
+  hairluxe,
   cbcLogo,
   ionic,
   nuxt,
+  proceduralyGeneratedAnimation,
   vue,
   graphql,
   manage,
   lulu,
   foodliky,
+  frequencyScreenshot,
+  flappyScreenshot,
   rps,
   homeview,
   prop,
